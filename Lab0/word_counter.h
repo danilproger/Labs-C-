@@ -6,18 +6,18 @@
 #define LAB0_WORD_COUNTER_H
 
 #include <iostream>
-#include <fstream>
 #include <string>
 #include <vector>
 
 class word_counter {
 public:
     word_counter();
+    ~word_counter();
     void count(const std::string& fileName);
     void write(const std::string& fileName);
     void clear();
 private:
-    unsigned long long cnt;
+    double cnt;
     std::vector<std::pair<int,std::string>> freqencies;
 };
 
