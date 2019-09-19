@@ -7,18 +7,19 @@
 
 #include <iostream>
 #include <string>
-#include <vector>
+#include <map>
 
 class word_counter {
 public:
     word_counter();
-    ~word_counter();
     void count(const std::string& fileName);
     void write(const std::string& fileName);
     void clear();
+
+    unsigned long long getSize() const;
 private:
-    double cnt;
-    std::vector<std::pair<int,std::string>> freqencies;
+    unsigned long long size;
+    std::map<std::string, int> freqencies;
 };
 
 
