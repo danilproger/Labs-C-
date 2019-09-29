@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/Programming/Clion projects/Lab1/main.cpp
+iostream
+-
+vector
+-
+limits
+-
+bitset
+-
+tritset.h
+D:/Programming/Clion projects/Lab1/tritset.h
+algorithm
+-
+
+D:/Programming/Clion projects/Lab1/tritset.h
+cstdio
+-
+vector
+-
+bitset
+-
+

@@ -83,6 +83,12 @@
 		<Unit filename="D:/Programming/Clion projects/Lab1/main.cpp">
 			<Option target="Lab1"/>
 		</Unit>
+		<Unit filename="D:/Programming/Clion projects/Lab1/tritset.cpp">
+			<Option target="Lab1"/>
+		</Unit>
+		<Unit filename="D:/Programming/Clion projects/Lab1/tritset.h">
+			<Option target="Lab1"/>
+		</Unit>
 		<Unit filename="D:/Programming/Clion projects/Lab1/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
