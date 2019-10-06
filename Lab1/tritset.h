@@ -8,19 +8,24 @@
 #include <cstdio>
 #include <vector>
 #include <bitset>
+#include "trit.h"
 
-enum trit {
-    Unknown, False, True
-};
+using uint = unsigned int;
+
+constexpr size_t trit_position(size_t pos) {
+    return pos % (sizeof(uint) * 4);
+}
+
+constexpr size_t word_position(size_t pos) {
+    return pos / (sizeof(uint) * 4);
+}
 
 class tritset {
     class reference {
         friend class tritset;
 
         size_t trit_pos;
-        unsigned int *word;
-
-        reference();
+        tritset *trits;
 
     public:
         reference(tritset &tritset, size_t pos);
@@ -30,27 +35,41 @@ class tritset {
         reference &operator=(const reference &x);
 
         operator trit() {
-            return static_cast<trit>(static_cast<unsigned int>(3 & (*word >> trit_pos * 2)));
+            return static_cast<trit>(static_cast<uint>(3 & (*(trits->trits+word_position(trit_pos)) >> trit_position(trit_pos) * 2)));
         }
     };
-
     friend class reference;
-
 private:
-    std::vector<unsigned int> trits;
+    uint *trits;
     size_t capacity;
     size_t size;
+
+    void realloc(size_t new_size);
+
 public:
-    std::vector<unsigned int> &getVec(){
-        return trits;
-    }
+    size_t getSize() const;
+
+    uint *getAr() { return trits; }
+
+    size_t getCapacity() const;
+
+    size_t cardinality(trit trit);
+
+    void trim(size_t lastIndex);
+
+    void shrink();
+
     tritset(size_t size);
-    reference operator [] (size_t pos){
-        return reference(*this, pos);
-    }
+
     ~tritset();
 
+    reference operator[](size_t key);
 };
 
+tritset operator&(tritset tritset1, tritset tritset2);
+
+tritset operator|(tritset tritset1, tritset tritset2);
+
+tritset operator~(tritset tritset);
 
 #endif //LAB1_TRITSET_H

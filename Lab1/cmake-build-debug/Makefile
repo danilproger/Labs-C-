@@ -149,6 +149,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles\Lab1.dir\build.make CMakeFiles/Lab1.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+trit.obj: trit.cpp.obj
+
+.PHONY : trit.obj
+
+# target to build an object file
+trit.cpp.obj:
+	$(MAKE) -f CMakeFiles\Lab1.dir\build.make CMakeFiles/Lab1.dir/trit.cpp.obj
+.PHONY : trit.cpp.obj
+
+trit.i: trit.cpp.i
+
+.PHONY : trit.i
+
+# target to preprocess a source file
+trit.cpp.i:
+	$(MAKE) -f CMakeFiles\Lab1.dir\build.make CMakeFiles/Lab1.dir/trit.cpp.i
+.PHONY : trit.cpp.i
+
+trit.s: trit.cpp.s
+
+.PHONY : trit.s
+
+# target to generate assembly for a file
+trit.cpp.s:
+	$(MAKE) -f CMakeFiles\Lab1.dir\build.make CMakeFiles/Lab1.dir/trit.cpp.s
+.PHONY : trit.cpp.s
+
 tritset.obj: tritset.cpp.obj
 
 .PHONY : tritset.obj
@@ -188,6 +215,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... trit.obj
+	@echo ... trit.i
+	@echo ... trit.s
 	@echo ... tritset.obj
 	@echo ... tritset.i
 	@echo ... tritset.s

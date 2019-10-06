@@ -83,6 +83,12 @@
 		<Unit filename="D:/Programming/Clion projects/Lab1/main.cpp">
 			<Option target="Lab1"/>
 		</Unit>
+		<Unit filename="D:/Programming/Clion projects/Lab1/trit.cpp">
+			<Option target="Lab1"/>
+		</Unit>
+		<Unit filename="D:/Programming/Clion projects/Lab1/trit.h">
+			<Option target="Lab1"/>
+		</Unit>
 		<Unit filename="D:/Programming/Clion projects/Lab1/tritset.cpp">
 			<Option target="Lab1"/>
 		</Unit>

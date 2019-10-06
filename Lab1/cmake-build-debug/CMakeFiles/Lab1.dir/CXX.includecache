@@ -20,6 +20,14 @@ D:/Programming/Clion projects/Lab1/tritset.h
 algorithm
 -
 
+D:/Programming/Clion projects/Lab1/trit.h
+
+D:/Programming/Clion projects/Lab1/tritset.cpp
+iostream
+-
+tritset.h
+D:/Programming/Clion projects/Lab1/tritset.h
+
 D:/Programming/Clion projects/Lab1/tritset.h
 cstdio
 -
@@ -27,4 +35,6 @@ vector
 -
 bitset
 -
+trit.h
+D:/Programming/Clion projects/Lab1/trit.h
 
