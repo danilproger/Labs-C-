@@ -80,7 +80,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="D:/Programming/Clion projects/Lab1/catch.hpp">
+			<Option target="Lab1"/>
+		</Unit>
 		<Unit filename="D:/Programming/Clion projects/Lab1/main.cpp">
+			<Option target="Lab1"/>
+		</Unit>
+		<Unit filename="D:/Programming/Clion projects/Lab1/tests.cpp">
 			<Option target="Lab1"/>
 		</Unit>
 		<Unit filename="D:/Programming/Clion projects/Lab1/trit.cpp">

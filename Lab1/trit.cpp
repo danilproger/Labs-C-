@@ -4,20 +4,20 @@
 
 #include "trit.h"
 
-enum trit operator&(enum trit left, enum trit right) {
-    if (left == True && right == True) return True;
-    if (right == False || left == False) return False;
-    return Unknown;
+trit operator&(trit left, trit right) {
+    if (left == trit::True && right == trit::True) return trit::True;
+    if (right == trit::False || left == trit::False) return trit::False;
+    return trit::Unknown;
 }
 
-enum trit operator|(enum trit left, enum trit right) {
-    if (left == True || right == True) return True;
-    if (left == False && right == False) return False;
-    return Unknown;
+trit operator|(trit left, trit right) {
+    if (left == trit::True || right == trit::True) return trit::True;
+    if (left == trit::False && right == trit::False) return trit::False;
+    return trit::Unknown;
 }
 
-enum trit operator~(enum trit trit) {
-    if (trit == False) return True;
-    if (trit == True) return False;
-    return Unknown;
+trit operator~(trit trit) {
+    if (trit == trit::False) return trit::True;
+    if (trit == trit::True) return trit::False;
+    return trit::Unknown;
 }

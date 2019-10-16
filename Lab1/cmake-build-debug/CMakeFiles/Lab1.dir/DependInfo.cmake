@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "D:/Programming/Clion projects/Lab1/main.cpp" "D:/Programming/Clion projects/Lab1/cmake-build-debug/CMakeFiles/Lab1.dir/main.cpp.obj"
+  "D:/Programming/Clion projects/Lab1/tests.cpp" "D:/Programming/Clion projects/Lab1/cmake-build-debug/CMakeFiles/Lab1.dir/tests.cpp.obj"
   "D:/Programming/Clion projects/Lab1/trit.cpp" "D:/Programming/Clion projects/Lab1/cmake-build-debug/CMakeFiles/Lab1.dir/trit.cpp.obj"
   "D:/Programming/Clion projects/Lab1/tritset.cpp" "D:/Programming/Clion projects/Lab1/cmake-build-debug/CMakeFiles/Lab1.dir/tritset.cpp.obj"
   )

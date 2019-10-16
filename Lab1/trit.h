@@ -9,10 +9,11 @@ enum trit {
     Unknown, False, True
 };
 
-enum trit operator&(enum trit left, enum trit right);
 
-enum trit operator|(enum trit left, enum trit right);
+trit operator&(trit left, trit right);
 
-enum trit operator~(enum trit trit);
+trit operator|(trit left, trit right);
+
+trit operator~(trit trit);
 
 #endif //LAB1_TRIT_H
