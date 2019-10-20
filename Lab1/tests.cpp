@@ -1,4 +1,3 @@
-/*
 //
 // Created by danil on 16.10.2019.
 //
@@ -21,14 +20,6 @@ TEST_CASE("Test_constructor") {
     for (int i = 0; i < set2.getCapacity(); i++) {
         REQUIRE(set2.getPTrits()[i] == 0);
     }
-}
-
-TEST_CASE("Test_destructor") {
-    tritset set1(105);
-    REQUIRE(set1.getSize() == 105);
-    REQUIRE(set1.getCapacity() == 7);
-    ~set1;
-    REQUIRE(set1.getPTrits() == nullptr);
 }
 
 TEST_CASE("Test_constructor_copy") {
@@ -256,4 +247,4 @@ TEST_CASE("Test_function_cardinality") {
     REQUIRE(set1.cardinality(Unknown) == 6);
     REQUIRE(set1.cardinality(False) == set1.getSize() - 48 - 4);
     REQUIRE(set1.cardinality(True) == set1.getSize() - 49 - 2);
-}*/
+}
