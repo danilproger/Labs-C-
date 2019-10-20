@@ -28,7 +28,11 @@ class tritset {
     };
 
 private:
-    uint *trits;
+    uint *pTrits;
+public:
+    uint *getPTrits() const;
+
+private:
     size_t capacity;
     size_t size;
 

@@ -6,8 +6,8 @@
 #include <algorithm>
 
 constexpr size_t allocated_memory(size_t size) {
-    if (size < 16) return 1;
-    if (!(2 * size / 8 % sizeof(uint))) return 2 * size / 8 / sizeof(uint);
+    if (size <= 16) return 1;
+    if ((2 * size % (8 * sizeof(uint))) == 0) return 2 * size / 8 / sizeof(uint);
     return 2 * size / 8 / sizeof(uint) + 1;
 }
 
@@ -22,34 +22,34 @@ constexpr size_t word_position(size_t pos) {
 tritset::tritset(size_t size) {
     tritset::size = size;
     tritset::capacity = allocated_memory(size);
-    tritset::trits = new uint[capacity];
-    std::fill(trits, trits + capacity, 0);
+    tritset::pTrits = new uint[capacity];
+    std::fill(pTrits, pTrits + capacity, 0);
 }
 
 tritset::tritset(const tritset &tritset) {
     size = tritset.size;
     capacity = tritset.capacity;
-    trits = new uint[capacity];
+    pTrits = new uint[capacity];
     for (int i = 0; i < capacity; i++) {
-        trits[i] = tritset.trits[i];
+        pTrits[i] = tritset.pTrits[i];
     }
 }
 
 tritset::tritset(tritset &&tritset) {
     size = tritset.size;
     capacity = tritset.capacity;
-    trits = tritset.trits;
-    tritset.trits = nullptr;
+    pTrits = tritset.pTrits;
+    tritset.pTrits = nullptr;
 }
 
 tritset &tritset::operator=(const tritset &tritset) {
     if (this != &tritset) {
         capacity = tritset.capacity;
         size = tritset.size;
-        delete[] trits;
-        trits = new uint[capacity];
+        delete[] pTrits;
+        pTrits = new uint[capacity];
         for (int i = 0; i < capacity; i++) {
-            trits[i] = tritset.trits[i];
+            pTrits[i] = tritset.pTrits[i];
         }
     }
     return *this;
@@ -59,15 +59,15 @@ tritset &tritset::operator=(tritset &&tritset) {
     if (this != &tritset) {
         capacity = tritset.capacity;
         size = tritset.size;
-        delete[] trits;
-        trits = tritset.trits;
-        tritset.trits = nullptr;
+        delete[] pTrits;
+        pTrits = tritset.pTrits;
+        tritset.pTrits = nullptr;
     }
     return *this;
 }
 
 tritset::~tritset() {
-    delete[]trits;
+    delete[]pTrits;
 }
 
 void tritset::realloc(size_t new_size) {
@@ -97,17 +97,17 @@ tritset::reference tritset::operator[](size_t key) {
 
 tritset::reference::operator trit() const {
     if (trit_pos >= pTritset->size) return Unknown;
-    return static_cast<trit>(static_cast<uint>(3 & (*(pTritset->trits + word_position(trit_pos))
+    return static_cast<trit>(static_cast<uint>(3 & (*(pTritset->pTrits + word_position(trit_pos))
             >> trit_position(trit_pos) * 2)));
 }
 
 tritset::reference &tritset::reference::operator=(const trit &x) {
     if (trit_pos >= pTritset->size) {
         if (x == trit::Unknown) return *this;
-        (*pTritset).realloc(trit_pos);
+        (*pTritset).realloc(trit_pos+1);
     }
-    *(pTritset->trits + word_position(trit_pos)) =
-            ((~(static_cast<uint>(3) << trit_position(trit_pos) * 2)) & *(pTritset->trits + word_position(trit_pos))) |
+    *(pTritset->pTrits + word_position(trit_pos)) =
+            ((~(static_cast<uint>(3) << trit_position(trit_pos) * 2)) & *(pTritset->pTrits + word_position(trit_pos))) |
             (static_cast<uint>(x) << (trit_position(trit_pos) * 2));
     return *this;
 }
@@ -163,5 +163,9 @@ size_t tritset::cardinality(trit trit) {
 }
 
 void tritset::trim(size_t lastIndex) {
-    if (lastIndex < size) realloc(lastIndex);
+    if (lastIndex < size) realloc(lastIndex+1);
+}
+
+uint *tritset::getPTrits() const {
+    return pTrits;
 }

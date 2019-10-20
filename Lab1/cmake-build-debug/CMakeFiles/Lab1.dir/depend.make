@@ -7,6 +7,8 @@ CMakeFiles/Lab1.dir/main.cpp.obj: ../tritset.h
 
 CMakeFiles/Lab1.dir/tests.cpp.obj: ../catch.hpp
 CMakeFiles/Lab1.dir/tests.cpp.obj: ../tests.cpp
+CMakeFiles/Lab1.dir/tests.cpp.obj: ../trit.h
+CMakeFiles/Lab1.dir/tests.cpp.obj: ../tritset.h
 
 CMakeFiles/Lab1.dir/trit.cpp.obj: ../trit.cpp
 CMakeFiles/Lab1.dir/trit.cpp.obj: ../trit.h

@@ -59,54 +59,54 @@ include CMakeFiles/Lab1.dir/flags.make
 CMakeFiles/Lab1.dir/main.cpp.obj: CMakeFiles/Lab1.dir/flags.make
 CMakeFiles/Lab1.dir/main.cpp.obj: ../main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Programming\Clion projects\Lab1\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Lab1.dir/main.cpp.obj"
-	C:\mingw\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Lab1.dir\main.cpp.obj -c "D:\Programming\Clion projects\Lab1\main.cpp"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Lab1.dir\main.cpp.obj -c "D:\Programming\Clion projects\Lab1\main.cpp"
 
 CMakeFiles/Lab1.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lab1.dir/main.cpp.i"
-	C:\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Programming\Clion projects\Lab1\main.cpp" > CMakeFiles\Lab1.dir\main.cpp.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Programming\Clion projects\Lab1\main.cpp" > CMakeFiles\Lab1.dir\main.cpp.i
 
 CMakeFiles/Lab1.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab1.dir/main.cpp.s"
-	C:\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Programming\Clion projects\Lab1\main.cpp" -o CMakeFiles\Lab1.dir\main.cpp.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Programming\Clion projects\Lab1\main.cpp" -o CMakeFiles\Lab1.dir\main.cpp.s
 
 CMakeFiles/Lab1.dir/tritset.cpp.obj: CMakeFiles/Lab1.dir/flags.make
 CMakeFiles/Lab1.dir/tritset.cpp.obj: ../tritset.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Programming\Clion projects\Lab1\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Lab1.dir/tritset.cpp.obj"
-	C:\mingw\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Lab1.dir\tritset.cpp.obj -c "D:\Programming\Clion projects\Lab1\tritset.cpp"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Lab1.dir\tritset.cpp.obj -c "D:\Programming\Clion projects\Lab1\tritset.cpp"
 
 CMakeFiles/Lab1.dir/tritset.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lab1.dir/tritset.cpp.i"
-	C:\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Programming\Clion projects\Lab1\tritset.cpp" > CMakeFiles\Lab1.dir\tritset.cpp.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Programming\Clion projects\Lab1\tritset.cpp" > CMakeFiles\Lab1.dir\tritset.cpp.i
 
 CMakeFiles/Lab1.dir/tritset.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab1.dir/tritset.cpp.s"
-	C:\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Programming\Clion projects\Lab1\tritset.cpp" -o CMakeFiles\Lab1.dir\tritset.cpp.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Programming\Clion projects\Lab1\tritset.cpp" -o CMakeFiles\Lab1.dir\tritset.cpp.s
 
 CMakeFiles/Lab1.dir/trit.cpp.obj: CMakeFiles/Lab1.dir/flags.make
 CMakeFiles/Lab1.dir/trit.cpp.obj: ../trit.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Programming\Clion projects\Lab1\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Lab1.dir/trit.cpp.obj"
-	C:\mingw\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Lab1.dir\trit.cpp.obj -c "D:\Programming\Clion projects\Lab1\trit.cpp"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Lab1.dir\trit.cpp.obj -c "D:\Programming\Clion projects\Lab1\trit.cpp"
 
 CMakeFiles/Lab1.dir/trit.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lab1.dir/trit.cpp.i"
-	C:\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Programming\Clion projects\Lab1\trit.cpp" > CMakeFiles\Lab1.dir\trit.cpp.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Programming\Clion projects\Lab1\trit.cpp" > CMakeFiles\Lab1.dir\trit.cpp.i
 
 CMakeFiles/Lab1.dir/trit.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab1.dir/trit.cpp.s"
-	C:\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Programming\Clion projects\Lab1\trit.cpp" -o CMakeFiles\Lab1.dir\trit.cpp.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Programming\Clion projects\Lab1\trit.cpp" -o CMakeFiles\Lab1.dir\trit.cpp.s
 
 CMakeFiles/Lab1.dir/tests.cpp.obj: CMakeFiles/Lab1.dir/flags.make
 CMakeFiles/Lab1.dir/tests.cpp.obj: ../tests.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Programming\Clion projects\Lab1\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Lab1.dir/tests.cpp.obj"
-	C:\mingw\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Lab1.dir\tests.cpp.obj -c "D:\Programming\Clion projects\Lab1\tests.cpp"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Lab1.dir\tests.cpp.obj -c "D:\Programming\Clion projects\Lab1\tests.cpp"
 
 CMakeFiles/Lab1.dir/tests.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lab1.dir/tests.cpp.i"
-	C:\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Programming\Clion projects\Lab1\tests.cpp" > CMakeFiles\Lab1.dir\tests.cpp.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Programming\Clion projects\Lab1\tests.cpp" > CMakeFiles\Lab1.dir\tests.cpp.i
 
 CMakeFiles/Lab1.dir/tests.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab1.dir/tests.cpp.s"
-	C:\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Programming\Clion projects\Lab1\tests.cpp" -o CMakeFiles\Lab1.dir\tests.cpp.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Programming\Clion projects\Lab1\tests.cpp" -o CMakeFiles\Lab1.dir\tests.cpp.s
 
 # Object files for target Lab1
 Lab1_OBJECTS = \

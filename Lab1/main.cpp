@@ -1,4 +1,3 @@
-/*
 #include <iostream>
 #include <vector>
 #include <limits>
@@ -8,6 +7,5 @@
 #include "tritset.h"
 
 int main() {
-
+    
 }
-*/
