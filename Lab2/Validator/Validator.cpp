@@ -34,7 +34,7 @@ bool Validator::validateArgs(const std::vector<std::string> &args) {
 }
 
 void Validator::validate(const std::string &fileName) {
-    bool flag = true;
+    bool flag = true, read = false, wrote = true;
     size_t lineCounter = 0, wordCounter = 0, tokensSize;
     std::ifstream ifstream;
     std::string line = "";
@@ -76,7 +76,7 @@ void Validator::validate(const std::string &fileName) {
             throw ValidatorException(EXCEPTION_ARGS(lineCounter + 1));
 
         if (blocks.find(tokens[0]) == blocks.end()) {
-            blocks[tokens[0]] = tokens[1];
+            blocks[tokens[0]] = tokens[2];
         } else {
             throw ValidatorException(EXCEPTION_ID(lineCounter + 1, tokens[0]));
         }
@@ -86,19 +86,19 @@ void Validator::validate(const std::string &fileName) {
     }
 
     if (flag) throw ValidatorException(EXCEPTION_CSED(lineCounter));
-
+    line.clear();
     std::getline(ifstream, line);
+    if (line == "") throw ValidatorException(EXCEPTION_COMM_SEQ(lineCounter + 1));
     boost::tokenizer<boost::char_separator<char>> tok{line, sep};
 
     lineCounter++;
     tokensSize = std::distance(tok.begin(), tok.end());
-
     for (auto i: tok) {
         if (wordCounter == 0 && blocks[i] != "readfile")
-            throw ValidatorException(EXCEPTION_COMM_SEQ_FIRST(lineCounter));
+            throw ValidatorException(EXCEPTION_COMM_SEQ_FIRST(lineCounter + 1));
 
         if (wordCounter == tokensSize - 1 && blocks[i] != "writefile")
-            throw ValidatorException(EXCEPTION_COMM_SEQ_LAST(lineCounter));
+            throw ValidatorException(EXCEPTION_COMM_SEQ_LAST(lineCounter + 1));
 
         if (wordCounter % 2 != 0 && i != "->") throw ValidatorException(EXCEPTION_COMM_SEQ(lineCounter + 1));
 
