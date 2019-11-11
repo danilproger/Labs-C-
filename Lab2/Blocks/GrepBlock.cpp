@@ -17,7 +17,7 @@ std::vector<std::string> GrepBlock::execute(std::vector<std::string> &text, std:
         else {
             flag = false;
             std::string newLine = text[i].substr(0, text[i].find(word)) +
-                                  text[i].substr(text[i].find(word) + word.length(), text[i].length() - 1);\
+                                  text[i].substr(text[i].find(word) + word.length(), text[i].length() - 1);
             text[i] = newLine;
         }
     }

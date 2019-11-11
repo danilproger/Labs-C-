@@ -2,5 +2,4 @@ desc
 2 = grep braab
 0 = readfile in.txt
 5 = writefile out.txt
-csed
-0 -> 2 -> -> 0
+wqersdfweqr = a

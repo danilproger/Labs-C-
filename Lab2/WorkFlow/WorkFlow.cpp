@@ -16,7 +16,7 @@ std::string getBlockName(const std::string &commandName){
     if (commandName == "sort") return "SortBlock";
     if (commandName == "replace") return "ReplaceBlock";
     if (commandName == "dump") return "DumpBlock";
-    return "-1";
+    throw WorkFlowException("Cannot find command: " + commandName);
 }
 
 WorkFlow::WorkFlow(const std::string &workFlow) {
