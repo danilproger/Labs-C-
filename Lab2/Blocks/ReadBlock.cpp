@@ -18,6 +18,8 @@ std::vector<std::string> ReadBlock::execute(std::vector<std::string> &text, std:
     } catch (std::ifstream::failure e) {
         std::cerr << "Exception opening file " << fileName << std::endl;
     }
+    
+    text.clear();
 
     while(!ifstream.eof()){
         std::getline(ifstream, line);
