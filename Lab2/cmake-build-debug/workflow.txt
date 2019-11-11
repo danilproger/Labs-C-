@@ -3,4 +3,4 @@ desc
 0 = readfile in.txt
 5 = writefile out.txt
 csed
-0 -> 5 -> 5
+0 -> 5
