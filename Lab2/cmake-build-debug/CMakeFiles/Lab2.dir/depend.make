@@ -10,6 +10,7 @@ CMakeFiles/Lab2.dir/Blocks/DumpBlock.cpp.obj: ../Interfaces/IBlockMaker.h
 
 CMakeFiles/Lab2.dir/Blocks/GrepBlock.cpp.obj: ../Blocks/GrepBlock.cpp
 CMakeFiles/Lab2.dir/Blocks/GrepBlock.cpp.obj: ../Blocks/GrepBlock.h
+CMakeFiles/Lab2.dir/Blocks/GrepBlock.cpp.obj: ../Exceptions/WorkFlowException.h
 CMakeFiles/Lab2.dir/Blocks/GrepBlock.cpp.obj: ../Factory/BlockFactory.h
 CMakeFiles/Lab2.dir/Blocks/GrepBlock.cpp.obj: ../Factory/BlockMaker.h
 CMakeFiles/Lab2.dir/Blocks/GrepBlock.cpp.obj: ../Interfaces/IBlock.h
@@ -24,6 +25,7 @@ CMakeFiles/Lab2.dir/Blocks/ReadBlock.cpp.obj: ../Interfaces/IBlockMaker.h
 
 CMakeFiles/Lab2.dir/Blocks/ReplaceBlock.cpp.obj: ../Blocks/ReplaceBlock.cpp
 CMakeFiles/Lab2.dir/Blocks/ReplaceBlock.cpp.obj: ../Blocks/ReplaceBlock.h
+CMakeFiles/Lab2.dir/Blocks/ReplaceBlock.cpp.obj: ../Exceptions/WorkFlowException.h
 CMakeFiles/Lab2.dir/Blocks/ReplaceBlock.cpp.obj: ../Factory/BlockFactory.h
 CMakeFiles/Lab2.dir/Blocks/ReplaceBlock.cpp.obj: ../Factory/BlockMaker.h
 CMakeFiles/Lab2.dir/Blocks/ReplaceBlock.cpp.obj: ../Interfaces/IBlock.h
@@ -45,6 +47,9 @@ CMakeFiles/Lab2.dir/Blocks/WriteBlock.cpp.obj: ../Interfaces/IBlockMaker.h
 
 CMakeFiles/Lab2.dir/Exceptions/ValidatorException.cpp.obj: ../Exceptions/ValidatorException.cpp
 CMakeFiles/Lab2.dir/Exceptions/ValidatorException.cpp.obj: ../Exceptions/ValidatorException.h
+
+CMakeFiles/Lab2.dir/Exceptions/WorkFlowException.cpp.obj: ../Exceptions/WorkFlowException.cpp
+CMakeFiles/Lab2.dir/Exceptions/WorkFlowException.cpp.obj: ../Exceptions/WorkFlowException.h
 
 CMakeFiles/Lab2.dir/Factory/BlockFactory.cpp.obj: ../Factory/BlockFactory.cpp
 CMakeFiles/Lab2.dir/Factory/BlockFactory.cpp.obj: ../Factory/BlockFactory.h
@@ -715,6 +720,7 @@ CMakeFiles/Lab2.dir/Validator/Validator.cpp.obj: ../Validator/Validator.cpp
 CMakeFiles/Lab2.dir/Validator/Validator.cpp.obj: ../Validator/Validator.h
 
 CMakeFiles/Lab2.dir/WorkFlow/WorkFlow.cpp.obj: ../Exceptions/ValidatorException.h
+CMakeFiles/Lab2.dir/WorkFlow/WorkFlow.cpp.obj: ../Exceptions/WorkFlowException.h
 CMakeFiles/Lab2.dir/WorkFlow/WorkFlow.cpp.obj: ../Factory/BlockFactory.h
 CMakeFiles/Lab2.dir/WorkFlow/WorkFlow.cpp.obj: ../Interfaces/IBlock.h
 CMakeFiles/Lab2.dir/WorkFlow/WorkFlow.cpp.obj: ../Interfaces/IBlockMaker.h
@@ -726,9 +732,7 @@ CMakeFiles/Lab2.dir/WorkFlow/WorkFlow.cpp.obj: ../Validator/Validator.h
 CMakeFiles/Lab2.dir/WorkFlow/WorkFlow.cpp.obj: ../WorkFlow/WorkFlow.cpp
 CMakeFiles/Lab2.dir/WorkFlow/WorkFlow.cpp.obj: ../WorkFlow/WorkFlow.h
 
-CMakeFiles/Lab2.dir/main.cpp.obj: ../Interfaces/IParser.h
 CMakeFiles/Lab2.dir/main.cpp.obj: ../Interfaces/IWorkFlow.h
-CMakeFiles/Lab2.dir/main.cpp.obj: ../Parser/Parser.h
 CMakeFiles/Lab2.dir/main.cpp.obj: ../WorkFlow/WorkFlow.h
 CMakeFiles/Lab2.dir/main.cpp.obj: ../main.cpp
 

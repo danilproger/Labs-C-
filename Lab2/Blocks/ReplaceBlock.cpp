@@ -23,7 +23,7 @@ std::vector<std::string> ReplaceBlock::execute(std::vector<std::string> &text, s
         }
     }
 
-    if(flag) throw WorkFlowException("Exception, cannot find word: " + word);
+    if (flag) throw WorkFlowException("Exception, cannot find word: " + word);
 
     return text;
 }

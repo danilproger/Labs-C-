@@ -15,22 +15,22 @@
 #define EXCEPTION_DESC(LINE) "Exception in line: " + std::to_string(LINE) + ", skipped desc\n"
 #define EXCEPTION_CSED(LINE) "Exception in line: " + std::to_string(LINE) + ", skipped csed at the end\n"
 #define EXCEPTION_COMM_SEQ(LINE) "Exception in line: " + std::to_string(LINE) + "\n"
+#define EXCEPTION_COMM_SEQ_ID(LINE, ID) "Exception in line: " + std::to_string(LINE) + ", cannot find ID: " + ID +"\n"
 #define EXCEPTION_COMM_SEQ_FIRST(LINE) "Exception in line: " + std::to_string(LINE) + ", first should be readfile\n"
 #define EXCEPTION_COMM_SEQ_LAST(LINE) "Exception in line: " + std::to_string(LINE) + ", last should be writefile\n"
-
 
 bool Validator::validateCommName(const std::string &commName) {
     return _commNames.find(commName) == _commNames.end();
 }
 
 bool Validator::validateArgs(const std::vector<std::string> &args) {
-    if (args[0] == "readfile" && args.size() == 3) return true;
-    if (args[0] == "writefile" && args.size() == 3) return true;
-    if (args[0] == "grep" && args.size() == 3) return true;
-    if (args[0] == "sort" && args.size() == 2) return true;
-    if (args[0] == "replace" && args.size() == 4) return true;
-    if (args[0] == "dump" && args.size() == 3) return true;
-    return false;
+    if (args[0] == "readfile" && args.size() == 2) return false;
+    if (args[0] == "writefile" && args.size() == 2) return false;
+    if (args[0] == "grep" && args.size() == 2) return false;
+    if (args[0] == "sort" && args.size() == 1) return false;
+    if (args[0] == "replace" && args.size() == 3) return false;
+    if (args[0] == "dump" && args.size() == 2) return false;
+    return true;
 }
 
 void Validator::validate(const std::string &fileName) {
@@ -70,7 +70,7 @@ void Validator::validate(const std::string &fileName) {
 
         if (validateCommName(tokens[1])) throw ValidatorException(EXCEPTION_NAME(lineCounter + 1, tokens[1]));
 
-        if (validateArgs(std::vector<std::string>(tokens.begin(), tokens.end())))
+        if (validateArgs(std::vector<std::string>(tokens.begin()+1, tokens.end())))
             throw ValidatorException(EXCEPTION_ARGS(lineCounter + 1));
 
         if (blocks.find(tokens[0]) == blocks.end()) {
@@ -82,21 +82,28 @@ void Validator::validate(const std::string &fileName) {
         tokens.clear();
         lineCounter++;
     }
+
     if (flag) throw ValidatorException(EXCEPTION_CSED(lineCounter + 1));
 
     std::getline(ifstream, line);
-    lineCounter++;
     boost::tokenizer<boost::char_separator<char>> tok{line, sep};
+
+    lineCounter++;
     tokensSize = std::distance(tok.begin(), tok.end());
+
     for (auto i: tok) {
         if (wordCounter == 0 && blocks[i] != "readfile")
             throw ValidatorException(EXCEPTION_COMM_SEQ_FIRST(lineCounter));
-        if (wordCounter == tokensSize && blocks[i] != "writefile")
+
+        if (wordCounter == tokensSize-1 && blocks[i] != "writefile")
             throw ValidatorException(EXCEPTION_COMM_SEQ_LAST(lineCounter));
+
         if (wordCounter % 2 != 0 && i != "->") throw ValidatorException(EXCEPTION_COMM_SEQ(lineCounter + 1));
-        if (wordCounter > 0 && wordCounter < tokensSize && wordCounter % 2 == 0) {
-            if (blocks.find(i) == blocks.end()) throw ValidatorException(EXCEPTION_COMM_SEQ(lineCounter + 1));
+
+        if (wordCounter > 0 && wordCounter < tokensSize-1 && wordCounter % 2 == 0) {
+            if (blocks.find(i) == blocks.end()) throw ValidatorException(EXCEPTION_COMM_SEQ_ID(lineCounter + 1, i));
         }
+
         wordCounter++;
     }
 }

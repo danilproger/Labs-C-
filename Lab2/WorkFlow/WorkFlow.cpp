@@ -32,6 +32,7 @@ void WorkFlow::run() {
         validator.validate(_workFlow);
     } catch (ValidatorException e){
         std::cerr<<e.what();
+        return;
     }
 
     parser.parse(_workFlow);
