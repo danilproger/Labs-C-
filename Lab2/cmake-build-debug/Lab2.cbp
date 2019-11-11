@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Lab2"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="D:/Programming/Clion projects/Lab2/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Programming/Clion projects/Lab2/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Programming/Clion projects/Lab2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Programming/Clion projects/Lab2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Programming/Clion projects/Lab2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Lab2">
+				<Option output="D:/Programming/Clion projects/Lab2/cmake-build-debug/Lab2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Programming/Clion projects/Lab2/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="c:/mingw/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../include/c++/8.2.0"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../include/c++/8.2.0/x86_64-w64-mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../include/c++/8.2.0/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Programming/Clion projects/Lab2/cmake-build-debug/Makefile&quot;  VERBOSE=1 Lab2"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Programming/Clion projects/Lab2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Programming/Clion projects/Lab2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Programming/Clion projects/Lab2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Lab2/fast">
+				<Option output="D:/Programming/Clion projects/Lab2/cmake-build-debug/Lab2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Programming/Clion projects/Lab2/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="c:/mingw/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../include/c++/8.2.0"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../include/c++/8.2.0/x86_64-w64-mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../include/c++/8.2.0/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Programming/Clion projects/Lab2/cmake-build-debug/Makefile&quot;  VERBOSE=1 Lab2/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Programming/Clion projects/Lab2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Programming/Clion projects/Lab2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Programming/Clion projects/Lab2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="D:/Programming/Clion projects/Lab2/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Programming/Clion projects/Lab2/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Programming/Clion projects/Lab2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Programming/Clion projects/Lab2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Programming/Clion projects/Lab2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="D:/Programming/Clion projects/Lab2/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Programming/Clion projects/Lab2/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Programming/Clion projects/Lab2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Programming/Clion projects/Lab2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Programming/Clion projects/Lab2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="D:/Programming/Clion projects/Lab2/Blocks/DumpBlock.cpp">
+			<Option target="Lab2"/>
+		</Unit>
+		<Unit filename="D:/Programming/Clion projects/Lab2/Blocks/DumpBlock.h">
+			<Option target="Lab2"/>
+		</Unit>
+		<Unit filename="D:/Programming/Clion projects/Lab2/Blocks/GrepBlock.cpp">
+			<Option target="Lab2"/>
+		</Unit>
+		<Unit filename="D:/Programming/Clion projects/Lab2/Blocks/GrepBlock.h">
+			<Option target="Lab2"/>
+		</Unit>
+		<Unit filename="D:/Programming/Clion projects/Lab2/Blocks/ReadBlock.cpp">
+			<Option target="Lab2"/>
+		</Unit>
+		<Unit filename="D:/Programming/Clion projects/Lab2/Blocks/ReadBlock.h">
+			<Option target="Lab2"/>
+		</Unit>
+		<Unit filename="D:/Programming/Clion projects/Lab2/Blocks/ReplaceBlock.cpp">
+			<Option target="Lab2"/>
+		</Unit>
+		<Unit filename="D:/Programming/Clion projects/Lab2/Blocks/ReplaceBlock.h">
+			<Option target="Lab2"/>
+		</Unit>
+		<Unit filename="D:/Programming/Clion projects/Lab2/Blocks/SortBlock.cpp">
+			<Option target="Lab2"/>
+		</Unit>
+		<Unit filename="D:/Programming/Clion projects/Lab2/Blocks/SortBlock.h">
+			<Option target="Lab2"/>
+		</Unit>
+		<Unit filename="D:/Programming/Clion projects/Lab2/Blocks/WriteBlock.cpp">
+			<Option target="Lab2"/>
+		</Unit>
+		<Unit filename="D:/Programming/Clion projects/Lab2/Blocks/WriteBlock.h">
+			<Option target="Lab2"/>
+		</Unit>
+		<Unit filename="D:/Programming/Clion projects/Lab2/Exceptions/ValidatorException.cpp">
+			<Option target="Lab2"/>
+		</Unit>
+		<Unit filename="D:/Programming/Clion projects/Lab2/Exceptions/ValidatorException.h">
+			<Option target="Lab2"/>
+		</Unit>
+		<Unit filename="D:/Programming/Clion projects/Lab2/Exceptions/WorkFlowException.cpp">
+			<Option target="Lab2"/>
+		</Unit>
+		<Unit filename="D:/Programming/Clion projects/Lab2/Exceptions/WorkFlowException.h">
+			<Option target="Lab2"/>
+		</Unit>
+		<Unit filename="D:/Programming/Clion projects/Lab2/Factory/BlockFactory.cpp">
+			<Option target="Lab2"/>
+		</Unit>
+		<Unit filename="D:/Programming/Clion projects/Lab2/Factory/BlockFactory.h">
+			<Option target="Lab2"/>
+		</Unit>
+		<Unit filename="D:/Programming/Clion projects/Lab2/Factory/BlockMaker.h">
+			<Option target="Lab2"/>
+		</Unit>
+		<Unit filename="D:/Programming/Clion projects/Lab2/Interfaces/IBlock.h">
+			<Option target="Lab2"/>
+		</Unit>
+		<Unit filename="D:/Programming/Clion projects/Lab2/Interfaces/IBlockMaker.h">
+			<Option target="Lab2"/>
+		</Unit>
+		<Unit filename="D:/Programming/Clion projects/Lab2/Interfaces/IParser.h">
+			<Option target="Lab2"/>
+		</Unit>
+		<Unit filename="D:/Programming/Clion projects/Lab2/Interfaces/IValidator.h">
+			<Option target="Lab2"/>
+		</Unit>
+		<Unit filename="D:/Programming/Clion projects/Lab2/Interfaces/IWorkFlow.h">
+			<Option target="Lab2"/>
+		</Unit>
+		<Unit filename="D:/Programming/Clion projects/Lab2/Parser/Parser.cpp">
+			<Option target="Lab2"/>
+		</Unit>
+		<Unit filename="D:/Programming/Clion projects/Lab2/Parser/Parser.h">
+			<Option target="Lab2"/>
+		</Unit>
+		<Unit filename="D:/Programming/Clion projects/Lab2/Validator/Validator.cpp">
+			<Option target="Lab2"/>
+		</Unit>
+		<Unit filename="D:/Programming/Clion projects/Lab2/Validator/Validator.h">
+			<Option target="Lab2"/>
+		</Unit>
+		<Unit filename="D:/Programming/Clion projects/Lab2/WorkFlow/WorkFlow.cpp">
+			<Option target="Lab2"/>
+		</Unit>
+		<Unit filename="D:/Programming/Clion projects/Lab2/WorkFlow/WorkFlow.h">
+			<Option target="Lab2"/>
+		</Unit>
+		<Unit filename="D:/Programming/Clion projects/Lab2/main.cpp">
+			<Option target="Lab2"/>
+		</Unit>
+		<Unit filename="D:/Programming/Clion projects/Lab2/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

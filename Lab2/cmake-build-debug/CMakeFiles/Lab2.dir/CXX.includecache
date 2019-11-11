@@ -1,0 +1,78 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/Programming/Clion projects/Lab2/Exceptions/ValidatorException.h
+exception
+-
+iostream
+-
+
+D:/Programming/Clion projects/Lab2/Factory/BlockFactory.h
+../Interfaces/IBlock.h
+D:/Programming/Clion projects/Lab2/Interfaces/IBlock.h
+../Interfaces/IBlockMaker.h
+D:/Programming/Clion projects/Lab2/Interfaces/IBlockMaker.h
+map
+-
+
+D:/Programming/Clion projects/Lab2/Interfaces/IBlock.h
+vector
+-
+string
+-
+
+D:/Programming/Clion projects/Lab2/Interfaces/IBlockMaker.h
+IBlock.h
+D:/Programming/Clion projects/Lab2/Interfaces/IBlock.h
+
+D:/Programming/Clion projects/Lab2/Interfaces/IParser.h
+iostream
+-
+
+D:/Programming/Clion projects/Lab2/Interfaces/IValidator.h
+iostream
+-
+
+D:/Programming/Clion projects/Lab2/Interfaces/IWorkFlow.h
+
+D:/Programming/Clion projects/Lab2/Parser/Parser.h
+string
+-
+unordered_map
+-
+vector
+-
+../Interfaces/IParser.h
+D:/Programming/Clion projects/Lab2/Interfaces/IParser.h
+
+D:/Programming/Clion projects/Lab2/Validator/Validator.h
+../Interfaces/IValidator.h
+D:/Programming/Clion projects/Lab2/Interfaces/IValidator.h
+set
+-
+vector
+-
+
+D:/Programming/Clion projects/Lab2/WorkFlow/WorkFlow.cpp
+WorkFlow.h
+D:/Programming/Clion projects/Lab2/WorkFlow/WorkFlow.h
+../Parser/Parser.h
+D:/Programming/Clion projects/Lab2/Parser/Parser.h
+../Factory/BlockFactory.h
+D:/Programming/Clion projects/Lab2/Factory/BlockFactory.h
+../Validator/Validator.h
+D:/Programming/Clion projects/Lab2/Validator/Validator.h
+../Exceptions/ValidatorException.h
+D:/Programming/Clion projects/Lab2/Exceptions/ValidatorException.h
+
+D:/Programming/Clion projects/Lab2/WorkFlow/WorkFlow.h
+string
+-
+../Interfaces/IWorkFlow.h
+D:/Programming/Clion projects/Lab2/Interfaces/IWorkFlow.h
+
