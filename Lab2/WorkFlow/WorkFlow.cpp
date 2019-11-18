@@ -20,6 +20,7 @@ void WorkFlow::run() {
         parser.parse(_workFlow);
     } catch (ParserException &e) {
         std::cerr << e.what();
+        return;
     }
 
     auto blocks = parser.getBlocks();

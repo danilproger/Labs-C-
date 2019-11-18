@@ -9,7 +9,7 @@ int main(int argc, char **argv) {
     }
 
     WorkFlow workFlow(argv[1]);
-    
+
     try {
         workFlow.run();
     } catch (FactoryException &e) {

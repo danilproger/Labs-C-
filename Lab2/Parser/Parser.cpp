@@ -10,6 +10,7 @@
 #include <unordered_map>
 
 #define EXCEPTION_ID(LINE, ID) "Exception in workflow, line: " + std::to_string(LINE) + ", id " + ID + " already exist\n"
+#define EXCEPTION_ID_NOT_EXISTS(LINE, ID) "Exception in workflow, line: " + std::to_string(LINE) + ", id " + ID + " doesn't exist\n"
 #define EXCEPTION_DESC(LINE) "Exception in workflow, line: " + std::to_string(LINE) + ", skipped desc\n"
 #define EXCEPTION_CSED(LINE) "Exception in workflow, line: " + std::to_string(LINE) + ", skipped csed at the end\n"
 #define EXCEPTION_COMM_SEQ(LINE) "Exception in workflow, line: " + std::to_string(LINE) + "\n"
@@ -40,7 +41,7 @@ void Parser::parse(const std::string &fileName) {
         std::getline(ifstream, line);
         boost::tokenizer<boost::char_separator<char>> tok{line, sep};
 
-        if(line=="") continue;
+        if (line == "") continue;
 
         for (auto i : tok) {
             tokens.push_back(i);
@@ -75,6 +76,9 @@ void Parser::parse(const std::string &fileName) {
 
     for (auto i: tok) {
         if (wordCounter % 2 != 0 && i != "->") throw ParserException(EXCEPTION_COMM_SEQ(lineCounter + 1));
+
+        if (wordCounter % 2 == 0 && _blocks.find(i) == _blocks.end())
+            throw ParserException(EXCEPTION_ID_NOT_EXISTS(lineCounter + 1, i));
 
         if (wordCounter % 2 == 0 && i != "->") {
             _commands.push_back(i);
