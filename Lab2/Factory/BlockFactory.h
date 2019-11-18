@@ -19,6 +19,7 @@ public:
     void RegisterMaker(const std::string &blockName, IBlockMaker *maker);
 
 private:
+    BlockFactory();
     std::map<std::string, IBlockMaker *> _makers;
 };
 

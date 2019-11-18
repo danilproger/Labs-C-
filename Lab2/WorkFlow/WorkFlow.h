@@ -9,7 +9,7 @@
 #include <string>
 #include "../Interfaces/IWorkFlow.h"
 
-class WorkFlow : public IWorkFlow{
+class WorkFlow : public IWorkFlow {
 private:
     std::string _workFlow;
 public:
@@ -17,6 +17,5 @@ public:
 
     void run() override;
 };
-
 
 #endif //LAB2_WORKFLOW_H

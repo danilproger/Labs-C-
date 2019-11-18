@@ -7,8 +7,9 @@
 
 #include "../Interfaces/IBlock.h"
 
-class ReplaceBlock : public IBlock{
-    std::vector<std::string> execute(std::vector<std::string> &text, std::vector<std::string> &args) const override;
+class ReplaceBlock : public IBlock {
+    void execute(std::vector<std::string> &text, const std::vector<std::string> &args) const override;
+    const blockType getType() const override;
 };
 
 

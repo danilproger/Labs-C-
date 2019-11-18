@@ -14,7 +14,7 @@ public:
     BlockMaker(const std::string &blockName){
         BlockFactory::getInstance().RegisterMaker(blockName, this);
     }
-    IBlock *Create(const std::string &blockName) const override {
+    IBlock *create(const std::string &blockName) const override {
         return new T;
     }
 };

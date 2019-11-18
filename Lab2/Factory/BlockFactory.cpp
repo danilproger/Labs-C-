@@ -3,6 +3,7 @@
 //
 
 #include "BlockFactory.h"
+#include "../Exceptions/FactoryException.h"
 
 BlockFactory &BlockFactory::getInstance() {
     static BlockFactory factory;
@@ -12,15 +13,17 @@ BlockFactory &BlockFactory::getInstance() {
 IBlock *BlockFactory::create(const std::string &blockName) const {
     auto i = _makers.find(blockName);
     if (i == _makers.end()) {
-        //throw
+        throw FactoryException("Cannot find block name: " + blockName);
     }
     IBlockMaker *maker = i->second;
-    return maker->Create(blockName);
+    return maker->create(blockName);
 }
 
 void BlockFactory::RegisterMaker(const std::string &blockName, IBlockMaker *maker) {
     if (_makers.find(blockName) != _makers.end()) {
-        //throw
+        throw FactoryException("Block already exists: " + blockName);
     }
     _makers[blockName] = maker;
 }
+
+BlockFactory::BlockFactory() {}

@@ -168,24 +168,10 @@ CMakeFiles/Lab2.dir/Blocks/DumpBlock.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab2.dir/Blocks/DumpBlock.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Programming\Clion projects\Lab2\Blocks\DumpBlock.cpp" -o CMakeFiles\Lab2.dir\Blocks\DumpBlock.cpp.s
 
-CMakeFiles/Lab2.dir/Parser/Parser.cpp.obj: CMakeFiles/Lab2.dir/flags.make
-CMakeFiles/Lab2.dir/Parser/Parser.cpp.obj: CMakeFiles/Lab2.dir/includes_CXX.rsp
-CMakeFiles/Lab2.dir/Parser/Parser.cpp.obj: ../Parser/Parser.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Programming\Clion projects\Lab2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Lab2.dir/Parser/Parser.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Lab2.dir\Parser\Parser.cpp.obj -c "D:\Programming\Clion projects\Lab2\Parser\Parser.cpp"
-
-CMakeFiles/Lab2.dir/Parser/Parser.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lab2.dir/Parser/Parser.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Programming\Clion projects\Lab2\Parser\Parser.cpp" > CMakeFiles\Lab2.dir\Parser\Parser.cpp.i
-
-CMakeFiles/Lab2.dir/Parser/Parser.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab2.dir/Parser/Parser.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Programming\Clion projects\Lab2\Parser\Parser.cpp" -o CMakeFiles\Lab2.dir\Parser\Parser.cpp.s
-
 CMakeFiles/Lab2.dir/WorkFlow/WorkFlow.cpp.obj: CMakeFiles/Lab2.dir/flags.make
 CMakeFiles/Lab2.dir/WorkFlow/WorkFlow.cpp.obj: CMakeFiles/Lab2.dir/includes_CXX.rsp
 CMakeFiles/Lab2.dir/WorkFlow/WorkFlow.cpp.obj: ../WorkFlow/WorkFlow.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Programming\Clion projects\Lab2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Lab2.dir/WorkFlow/WorkFlow.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Programming\Clion projects\Lab2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Lab2.dir/WorkFlow/WorkFlow.cpp.obj"
 	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Lab2.dir\WorkFlow\WorkFlow.cpp.obj -c "D:\Programming\Clion projects\Lab2\WorkFlow\WorkFlow.cpp"
 
 CMakeFiles/Lab2.dir/WorkFlow/WorkFlow.cpp.i: cmake_force
@@ -196,38 +182,38 @@ CMakeFiles/Lab2.dir/WorkFlow/WorkFlow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab2.dir/WorkFlow/WorkFlow.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Programming\Clion projects\Lab2\WorkFlow\WorkFlow.cpp" -o CMakeFiles\Lab2.dir\WorkFlow\WorkFlow.cpp.s
 
-CMakeFiles/Lab2.dir/Validator/Validator.cpp.obj: CMakeFiles/Lab2.dir/flags.make
-CMakeFiles/Lab2.dir/Validator/Validator.cpp.obj: CMakeFiles/Lab2.dir/includes_CXX.rsp
-CMakeFiles/Lab2.dir/Validator/Validator.cpp.obj: ../Validator/Validator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Programming\Clion projects\Lab2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Lab2.dir/Validator/Validator.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Lab2.dir\Validator\Validator.cpp.obj -c "D:\Programming\Clion projects\Lab2\Validator\Validator.cpp"
+CMakeFiles/Lab2.dir/Parser/Parser.cpp.obj: CMakeFiles/Lab2.dir/flags.make
+CMakeFiles/Lab2.dir/Parser/Parser.cpp.obj: CMakeFiles/Lab2.dir/includes_CXX.rsp
+CMakeFiles/Lab2.dir/Parser/Parser.cpp.obj: ../Parser/Parser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Programming\Clion projects\Lab2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Lab2.dir/Parser/Parser.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Lab2.dir\Parser\Parser.cpp.obj -c "D:\Programming\Clion projects\Lab2\Parser\Parser.cpp"
 
-CMakeFiles/Lab2.dir/Validator/Validator.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lab2.dir/Validator/Validator.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Programming\Clion projects\Lab2\Validator\Validator.cpp" > CMakeFiles\Lab2.dir\Validator\Validator.cpp.i
+CMakeFiles/Lab2.dir/Parser/Parser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lab2.dir/Parser/Parser.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Programming\Clion projects\Lab2\Parser\Parser.cpp" > CMakeFiles\Lab2.dir\Parser\Parser.cpp.i
 
-CMakeFiles/Lab2.dir/Validator/Validator.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab2.dir/Validator/Validator.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Programming\Clion projects\Lab2\Validator\Validator.cpp" -o CMakeFiles\Lab2.dir\Validator\Validator.cpp.s
+CMakeFiles/Lab2.dir/Parser/Parser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab2.dir/Parser/Parser.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Programming\Clion projects\Lab2\Parser\Parser.cpp" -o CMakeFiles\Lab2.dir\Parser\Parser.cpp.s
 
-CMakeFiles/Lab2.dir/Exceptions/ValidatorException.cpp.obj: CMakeFiles/Lab2.dir/flags.make
-CMakeFiles/Lab2.dir/Exceptions/ValidatorException.cpp.obj: CMakeFiles/Lab2.dir/includes_CXX.rsp
-CMakeFiles/Lab2.dir/Exceptions/ValidatorException.cpp.obj: ../Exceptions/ValidatorException.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Programming\Clion projects\Lab2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Lab2.dir/Exceptions/ValidatorException.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Lab2.dir\Exceptions\ValidatorException.cpp.obj -c "D:\Programming\Clion projects\Lab2\Exceptions\ValidatorException.cpp"
+CMakeFiles/Lab2.dir/Exceptions/ParserException.cpp.obj: CMakeFiles/Lab2.dir/flags.make
+CMakeFiles/Lab2.dir/Exceptions/ParserException.cpp.obj: CMakeFiles/Lab2.dir/includes_CXX.rsp
+CMakeFiles/Lab2.dir/Exceptions/ParserException.cpp.obj: ../Exceptions/ParserException.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Programming\Clion projects\Lab2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Lab2.dir/Exceptions/ParserException.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Lab2.dir\Exceptions\ParserException.cpp.obj -c "D:\Programming\Clion projects\Lab2\Exceptions\ParserException.cpp"
 
-CMakeFiles/Lab2.dir/Exceptions/ValidatorException.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lab2.dir/Exceptions/ValidatorException.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Programming\Clion projects\Lab2\Exceptions\ValidatorException.cpp" > CMakeFiles\Lab2.dir\Exceptions\ValidatorException.cpp.i
+CMakeFiles/Lab2.dir/Exceptions/ParserException.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lab2.dir/Exceptions/ParserException.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Programming\Clion projects\Lab2\Exceptions\ParserException.cpp" > CMakeFiles\Lab2.dir\Exceptions\ParserException.cpp.i
 
-CMakeFiles/Lab2.dir/Exceptions/ValidatorException.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab2.dir/Exceptions/ValidatorException.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Programming\Clion projects\Lab2\Exceptions\ValidatorException.cpp" -o CMakeFiles\Lab2.dir\Exceptions\ValidatorException.cpp.s
+CMakeFiles/Lab2.dir/Exceptions/ParserException.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab2.dir/Exceptions/ParserException.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Programming\Clion projects\Lab2\Exceptions\ParserException.cpp" -o CMakeFiles\Lab2.dir\Exceptions\ParserException.cpp.s
 
 CMakeFiles/Lab2.dir/Exceptions/WorkFlowException.cpp.obj: CMakeFiles/Lab2.dir/flags.make
 CMakeFiles/Lab2.dir/Exceptions/WorkFlowException.cpp.obj: CMakeFiles/Lab2.dir/includes_CXX.rsp
 CMakeFiles/Lab2.dir/Exceptions/WorkFlowException.cpp.obj: ../Exceptions/WorkFlowException.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Programming\Clion projects\Lab2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Lab2.dir/Exceptions/WorkFlowException.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Programming\Clion projects\Lab2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Lab2.dir/Exceptions/WorkFlowException.cpp.obj"
 	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Lab2.dir\Exceptions\WorkFlowException.cpp.obj -c "D:\Programming\Clion projects\Lab2\Exceptions\WorkFlowException.cpp"
 
 CMakeFiles/Lab2.dir/Exceptions/WorkFlowException.cpp.i: cmake_force
@@ -237,6 +223,20 @@ CMakeFiles/Lab2.dir/Exceptions/WorkFlowException.cpp.i: cmake_force
 CMakeFiles/Lab2.dir/Exceptions/WorkFlowException.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab2.dir/Exceptions/WorkFlowException.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Programming\Clion projects\Lab2\Exceptions\WorkFlowException.cpp" -o CMakeFiles\Lab2.dir\Exceptions\WorkFlowException.cpp.s
+
+CMakeFiles/Lab2.dir/Exceptions/FactoryException.cpp.obj: CMakeFiles/Lab2.dir/flags.make
+CMakeFiles/Lab2.dir/Exceptions/FactoryException.cpp.obj: CMakeFiles/Lab2.dir/includes_CXX.rsp
+CMakeFiles/Lab2.dir/Exceptions/FactoryException.cpp.obj: ../Exceptions/FactoryException.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Programming\Clion projects\Lab2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Lab2.dir/Exceptions/FactoryException.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Lab2.dir\Exceptions\FactoryException.cpp.obj -c "D:\Programming\Clion projects\Lab2\Exceptions\FactoryException.cpp"
+
+CMakeFiles/Lab2.dir/Exceptions/FactoryException.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lab2.dir/Exceptions/FactoryException.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Programming\Clion projects\Lab2\Exceptions\FactoryException.cpp" > CMakeFiles\Lab2.dir\Exceptions\FactoryException.cpp.i
+
+CMakeFiles/Lab2.dir/Exceptions/FactoryException.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab2.dir/Exceptions/FactoryException.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Programming\Clion projects\Lab2\Exceptions\FactoryException.cpp" -o CMakeFiles\Lab2.dir\Exceptions\FactoryException.cpp.s
 
 # Object files for target Lab2
 Lab2_OBJECTS = \
@@ -248,11 +248,11 @@ Lab2_OBJECTS = \
 "CMakeFiles/Lab2.dir/Blocks/GrepBlock.cpp.obj" \
 "CMakeFiles/Lab2.dir/Blocks/ReplaceBlock.cpp.obj" \
 "CMakeFiles/Lab2.dir/Blocks/DumpBlock.cpp.obj" \
-"CMakeFiles/Lab2.dir/Parser/Parser.cpp.obj" \
 "CMakeFiles/Lab2.dir/WorkFlow/WorkFlow.cpp.obj" \
-"CMakeFiles/Lab2.dir/Validator/Validator.cpp.obj" \
-"CMakeFiles/Lab2.dir/Exceptions/ValidatorException.cpp.obj" \
-"CMakeFiles/Lab2.dir/Exceptions/WorkFlowException.cpp.obj"
+"CMakeFiles/Lab2.dir/Parser/Parser.cpp.obj" \
+"CMakeFiles/Lab2.dir/Exceptions/ParserException.cpp.obj" \
+"CMakeFiles/Lab2.dir/Exceptions/WorkFlowException.cpp.obj" \
+"CMakeFiles/Lab2.dir/Exceptions/FactoryException.cpp.obj"
 
 # External object files for target Lab2
 Lab2_EXTERNAL_OBJECTS =
@@ -265,11 +265,11 @@ Lab2.exe: CMakeFiles/Lab2.dir/Blocks/WriteBlock.cpp.obj
 Lab2.exe: CMakeFiles/Lab2.dir/Blocks/GrepBlock.cpp.obj
 Lab2.exe: CMakeFiles/Lab2.dir/Blocks/ReplaceBlock.cpp.obj
 Lab2.exe: CMakeFiles/Lab2.dir/Blocks/DumpBlock.cpp.obj
-Lab2.exe: CMakeFiles/Lab2.dir/Parser/Parser.cpp.obj
 Lab2.exe: CMakeFiles/Lab2.dir/WorkFlow/WorkFlow.cpp.obj
-Lab2.exe: CMakeFiles/Lab2.dir/Validator/Validator.cpp.obj
-Lab2.exe: CMakeFiles/Lab2.dir/Exceptions/ValidatorException.cpp.obj
+Lab2.exe: CMakeFiles/Lab2.dir/Parser/Parser.cpp.obj
+Lab2.exe: CMakeFiles/Lab2.dir/Exceptions/ParserException.cpp.obj
 Lab2.exe: CMakeFiles/Lab2.dir/Exceptions/WorkFlowException.cpp.obj
+Lab2.exe: CMakeFiles/Lab2.dir/Exceptions/FactoryException.cpp.obj
 Lab2.exe: CMakeFiles/Lab2.dir/build.make
 Lab2.exe: CMakeFiles/Lab2.dir/linklibs.rsp
 Lab2.exe: CMakeFiles/Lab2.dir/objects1.rsp

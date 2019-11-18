@@ -284,32 +284,59 @@ Blocks/WriteBlock.cpp.s:
 	$(MAKE) -f CMakeFiles\Lab2.dir\build.make CMakeFiles/Lab2.dir/Blocks/WriteBlock.cpp.s
 .PHONY : Blocks/WriteBlock.cpp.s
 
-Exceptions/ValidatorException.obj: Exceptions/ValidatorException.cpp.obj
+Exceptions/FactoryException.obj: Exceptions/FactoryException.cpp.obj
 
-.PHONY : Exceptions/ValidatorException.obj
+.PHONY : Exceptions/FactoryException.obj
 
 # target to build an object file
-Exceptions/ValidatorException.cpp.obj:
-	$(MAKE) -f CMakeFiles\Lab2.dir\build.make CMakeFiles/Lab2.dir/Exceptions/ValidatorException.cpp.obj
-.PHONY : Exceptions/ValidatorException.cpp.obj
+Exceptions/FactoryException.cpp.obj:
+	$(MAKE) -f CMakeFiles\Lab2.dir\build.make CMakeFiles/Lab2.dir/Exceptions/FactoryException.cpp.obj
+.PHONY : Exceptions/FactoryException.cpp.obj
 
-Exceptions/ValidatorException.i: Exceptions/ValidatorException.cpp.i
+Exceptions/FactoryException.i: Exceptions/FactoryException.cpp.i
 
-.PHONY : Exceptions/ValidatorException.i
+.PHONY : Exceptions/FactoryException.i
 
 # target to preprocess a source file
-Exceptions/ValidatorException.cpp.i:
-	$(MAKE) -f CMakeFiles\Lab2.dir\build.make CMakeFiles/Lab2.dir/Exceptions/ValidatorException.cpp.i
-.PHONY : Exceptions/ValidatorException.cpp.i
+Exceptions/FactoryException.cpp.i:
+	$(MAKE) -f CMakeFiles\Lab2.dir\build.make CMakeFiles/Lab2.dir/Exceptions/FactoryException.cpp.i
+.PHONY : Exceptions/FactoryException.cpp.i
 
-Exceptions/ValidatorException.s: Exceptions/ValidatorException.cpp.s
+Exceptions/FactoryException.s: Exceptions/FactoryException.cpp.s
 
-.PHONY : Exceptions/ValidatorException.s
+.PHONY : Exceptions/FactoryException.s
 
 # target to generate assembly for a file
-Exceptions/ValidatorException.cpp.s:
-	$(MAKE) -f CMakeFiles\Lab2.dir\build.make CMakeFiles/Lab2.dir/Exceptions/ValidatorException.cpp.s
-.PHONY : Exceptions/ValidatorException.cpp.s
+Exceptions/FactoryException.cpp.s:
+	$(MAKE) -f CMakeFiles\Lab2.dir\build.make CMakeFiles/Lab2.dir/Exceptions/FactoryException.cpp.s
+.PHONY : Exceptions/FactoryException.cpp.s
+
+Exceptions/ParserException.obj: Exceptions/ParserException.cpp.obj
+
+.PHONY : Exceptions/ParserException.obj
+
+# target to build an object file
+Exceptions/ParserException.cpp.obj:
+	$(MAKE) -f CMakeFiles\Lab2.dir\build.make CMakeFiles/Lab2.dir/Exceptions/ParserException.cpp.obj
+.PHONY : Exceptions/ParserException.cpp.obj
+
+Exceptions/ParserException.i: Exceptions/ParserException.cpp.i
+
+.PHONY : Exceptions/ParserException.i
+
+# target to preprocess a source file
+Exceptions/ParserException.cpp.i:
+	$(MAKE) -f CMakeFiles\Lab2.dir\build.make CMakeFiles/Lab2.dir/Exceptions/ParserException.cpp.i
+.PHONY : Exceptions/ParserException.cpp.i
+
+Exceptions/ParserException.s: Exceptions/ParserException.cpp.s
+
+.PHONY : Exceptions/ParserException.s
+
+# target to generate assembly for a file
+Exceptions/ParserException.cpp.s:
+	$(MAKE) -f CMakeFiles\Lab2.dir\build.make CMakeFiles/Lab2.dir/Exceptions/ParserException.cpp.s
+.PHONY : Exceptions/ParserException.cpp.s
 
 Exceptions/WorkFlowException.obj: Exceptions/WorkFlowException.cpp.obj
 
@@ -392,33 +419,6 @@ Parser/Parser.cpp.s:
 	$(MAKE) -f CMakeFiles\Lab2.dir\build.make CMakeFiles/Lab2.dir/Parser/Parser.cpp.s
 .PHONY : Parser/Parser.cpp.s
 
-Validator/Validator.obj: Validator/Validator.cpp.obj
-
-.PHONY : Validator/Validator.obj
-
-# target to build an object file
-Validator/Validator.cpp.obj:
-	$(MAKE) -f CMakeFiles\Lab2.dir\build.make CMakeFiles/Lab2.dir/Validator/Validator.cpp.obj
-.PHONY : Validator/Validator.cpp.obj
-
-Validator/Validator.i: Validator/Validator.cpp.i
-
-.PHONY : Validator/Validator.i
-
-# target to preprocess a source file
-Validator/Validator.cpp.i:
-	$(MAKE) -f CMakeFiles\Lab2.dir\build.make CMakeFiles/Lab2.dir/Validator/Validator.cpp.i
-.PHONY : Validator/Validator.cpp.i
-
-Validator/Validator.s: Validator/Validator.cpp.s
-
-.PHONY : Validator/Validator.s
-
-# target to generate assembly for a file
-Validator/Validator.cpp.s:
-	$(MAKE) -f CMakeFiles\Lab2.dir\build.make CMakeFiles/Lab2.dir/Validator/Validator.cpp.s
-.PHONY : Validator/Validator.cpp.s
-
 WorkFlow/WorkFlow.obj: WorkFlow/WorkFlow.cpp.obj
 
 .PHONY : WorkFlow/WorkFlow.obj
@@ -500,9 +500,12 @@ help:
 	@echo ... Blocks/WriteBlock.obj
 	@echo ... Blocks/WriteBlock.i
 	@echo ... Blocks/WriteBlock.s
-	@echo ... Exceptions/ValidatorException.obj
-	@echo ... Exceptions/ValidatorException.i
-	@echo ... Exceptions/ValidatorException.s
+	@echo ... Exceptions/FactoryException.obj
+	@echo ... Exceptions/FactoryException.i
+	@echo ... Exceptions/FactoryException.s
+	@echo ... Exceptions/ParserException.obj
+	@echo ... Exceptions/ParserException.i
+	@echo ... Exceptions/ParserException.s
 	@echo ... Exceptions/WorkFlowException.obj
 	@echo ... Exceptions/WorkFlowException.i
 	@echo ... Exceptions/WorkFlowException.s
@@ -512,9 +515,6 @@ help:
 	@echo ... Parser/Parser.obj
 	@echo ... Parser/Parser.i
 	@echo ... Parser/Parser.s
-	@echo ... Validator/Validator.obj
-	@echo ... Validator/Validator.i
-	@echo ... Validator/Validator.s
 	@echo ... WorkFlow/WorkFlow.obj
 	@echo ... WorkFlow/WorkFlow.i
 	@echo ... WorkFlow/WorkFlow.s

@@ -6,11 +6,12 @@
 #include "SortBlock.h"
 #include "../Factory/BlockMaker.h"
 
-REGISTER_SHAPE(SortBlock);
+REGISTER_BLOCK(SortBlock, sort);
 
-std::vector<std::string>
-SortBlock::execute(std::vector<std::string> &text, std::vector<std::string> &args) const {
+void SortBlock::execute(std::vector<std::string> &text, const std::vector<std::string> &args) const {
     std::sort(text.begin(), text.end());
+}
 
-    return text;
+const blockType SortBlock::getType() const {
+    return OTHER;
 }

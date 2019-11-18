@@ -9,6 +9,6 @@
 
 class IBlockMaker {
 public:
-    virtual IBlock *Create(const std::string &blockName) const = 0;
+    virtual IBlock *create(const std::string &blockName) const = 0;
 };
 #endif //LAB2_IBLOCKMAKER_H

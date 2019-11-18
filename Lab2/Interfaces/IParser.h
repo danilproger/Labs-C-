@@ -7,7 +7,7 @@
 
 #include <iostream>
 
-class IParser {
+class IParser{
     virtual void parse(const std::string &fileName) = 0;
 };
 #endif //LAB2_IPARSER_H

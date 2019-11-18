@@ -6,9 +6,10 @@
 #include "../Factory/BlockMaker.h"
 #include "../Exceptions/WorkFlowException.h"
 
-REGISTER_SHAPE(GrepBlock);
+REGISTER_BLOCK(GrepBlock, grep);
 
-std::vector<std::string> GrepBlock::execute(std::vector<std::string> &text, std::vector<std::string> &args) const {
+void GrepBlock::execute(std::vector<std::string> &text, const std::vector<std::string> &args) const {
+    if(args.size()!=1) throw WorkFlowException("Args for grep != 1");
     bool flag = true;
     std::string word = args[0];
 
@@ -23,6 +24,8 @@ std::vector<std::string> GrepBlock::execute(std::vector<std::string> &text, std:
     }
 
     if(flag) throw WorkFlowException("Exception, cannot find word: " + word);
+}
 
-    return text;
+const blockType GrepBlock::getType() const {
+    return OTHER;
 }

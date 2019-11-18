@@ -118,10 +118,16 @@
 		<Unit filename="D:/Programming/Clion projects/Lab2/Blocks/WriteBlock.h">
 			<Option target="Lab2"/>
 		</Unit>
-		<Unit filename="D:/Programming/Clion projects/Lab2/Exceptions/ValidatorException.cpp">
+		<Unit filename="D:/Programming/Clion projects/Lab2/Exceptions/FactoryException.cpp">
 			<Option target="Lab2"/>
 		</Unit>
-		<Unit filename="D:/Programming/Clion projects/Lab2/Exceptions/ValidatorException.h">
+		<Unit filename="D:/Programming/Clion projects/Lab2/Exceptions/FactoryException.h">
+			<Option target="Lab2"/>
+		</Unit>
+		<Unit filename="D:/Programming/Clion projects/Lab2/Exceptions/ParserException.cpp">
+			<Option target="Lab2"/>
+		</Unit>
+		<Unit filename="D:/Programming/Clion projects/Lab2/Exceptions/ParserException.h">
 			<Option target="Lab2"/>
 		</Unit>
 		<Unit filename="D:/Programming/Clion projects/Lab2/Exceptions/WorkFlowException.cpp">
@@ -148,9 +154,6 @@
 		<Unit filename="D:/Programming/Clion projects/Lab2/Interfaces/IParser.h">
 			<Option target="Lab2"/>
 		</Unit>
-		<Unit filename="D:/Programming/Clion projects/Lab2/Interfaces/IValidator.h">
-			<Option target="Lab2"/>
-		</Unit>
 		<Unit filename="D:/Programming/Clion projects/Lab2/Interfaces/IWorkFlow.h">
 			<Option target="Lab2"/>
 		</Unit>
@@ -158,12 +161,6 @@
 			<Option target="Lab2"/>
 		</Unit>
 		<Unit filename="D:/Programming/Clion projects/Lab2/Parser/Parser.h">
-			<Option target="Lab2"/>
-		</Unit>
-		<Unit filename="D:/Programming/Clion projects/Lab2/Validator/Validator.cpp">
-			<Option target="Lab2"/>
-		</Unit>
-		<Unit filename="D:/Programming/Clion projects/Lab2/Validator/Validator.h">
 			<Option target="Lab2"/>
 		</Unit>
 		<Unit filename="D:/Programming/Clion projects/Lab2/WorkFlow/WorkFlow.cpp">

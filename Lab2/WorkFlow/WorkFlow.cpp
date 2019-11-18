@@ -5,19 +5,8 @@
 #include "WorkFlow.h"
 #include "../Parser/Parser.h"
 #include "../Factory/BlockFactory.h"
-#include "../Validator/Validator.h"
-#include "../Exceptions/ValidatorException.h"
+#include "../Exceptions/ParserException.h"
 #include "../Exceptions/WorkFlowException.h"
-
-std::string getBlockName(const std::string &commandName){
-    if (commandName == "readfile") return "ReadBlock";
-    if (commandName == "writefile") return "WriteBlock";
-    if (commandName == "grep") return "GrepBlock";
-    if (commandName == "sort") return "SortBlock";
-    if (commandName == "replace") return "ReplaceBlock";
-    if (commandName == "dump") return "DumpBlock";
-    throw WorkFlowException("Cannot find command: " + commandName);
-}
 
 WorkFlow::WorkFlow(const std::string &workFlow) {
     _workFlow = workFlow;
@@ -25,28 +14,28 @@ WorkFlow::WorkFlow(const std::string &workFlow) {
 
 void WorkFlow::run() {
     Parser parser;
-    Validator validator;
     std::vector<std::string> text;
 
-    try{
-        validator.validate(_workFlow);
-    } catch (ValidatorException e){
-        std::cerr<<e.what();
-        return;
+    try {
+        parser.parse(_workFlow);
+    } catch (ParserException &e) {
+        std::cerr << e.what();
     }
 
-    parser.parse(_workFlow);
+    auto blocks = parser.getBlocks();
+    auto commands = parser.getCommands();
 
-    auto map = parser.getBlocks();
-    auto comm = parser.getCommands();
+    for (size_t i = 0; i < commands.size(); i++) {
+        std::string blockName = blocks[commands[i]][0];
+        std::vector<std::string> args(blocks[commands[i]].begin() + 1, blocks[commands[i]].end());
+        auto *block = BlockFactory::getInstance().create(blockName);
 
-    try {
-        for (auto i: comm) {
-            std::string blockName = getBlockName(map[i][0]);
-            std::vector<std::string> args(map[i].begin() + 1, map[i].end());
-            text = BlockFactory::getInstance().create(blockName)->execute(text, args);
-        }
-    } catch (WorkFlowException e){
-        std::cerr<<e.what();
+        if (i == 0 && block->getType() != IN_TYPE)
+            throw WorkFlowException("Exception while running, first should be in block");
+        if (i == commands.size() - 1 && block->getType() != OUT_TYPE)
+            throw WorkFlowException("Exception while running, last should be out block");
+
+        block->execute(text, args);
+        delete block;
     }
 }

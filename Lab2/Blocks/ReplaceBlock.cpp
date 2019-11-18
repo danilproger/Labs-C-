@@ -6,9 +6,10 @@
 #include "../Factory/BlockMaker.h"
 #include "../Exceptions/WorkFlowException.h"
 
-REGISTER_SHAPE(ReplaceBlock);
+REGISTER_BLOCK(ReplaceBlock, replace);
 
-std::vector<std::string> ReplaceBlock::execute(std::vector<std::string> &text, std::vector<std::string> &args) const {
+void ReplaceBlock::execute(std::vector<std::string> &text, const std::vector<std::string> &args) const {
+    if(args.size()!=2) throw WorkFlowException("Args for replace != 2");
     bool flag = true;
     std::string word = args[0];
     std::string newWord = args[1];
@@ -24,6 +25,8 @@ std::vector<std::string> ReplaceBlock::execute(std::vector<std::string> &text, s
     }
 
     if (flag) throw WorkFlowException("Exception, cannot find word: " + word);
+}
 
-    return text;
+const blockType ReplaceBlock::getType() const {
+    return OTHER;
 }
