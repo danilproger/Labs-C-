@@ -22,6 +22,8 @@ void ReadBlock::execute(std::vector<std::string> &text, const std::vector<std::s
     } catch (std::ifstream::failure &e) {
         std::cerr << "Exception opening file " << fileName << std::endl;
     }
+    
+    text.clear();
 
     text.clear();
 
