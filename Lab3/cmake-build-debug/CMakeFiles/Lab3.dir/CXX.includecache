@@ -1,0 +1,62 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/Programming/Clion projects/Lab3/ConsoleView/ConsoleView.h
+../Interfaces/IGameView.h
+D:/Programming/Clion projects/Lab3/Interfaces/IGameView.h
+
+D:/Programming/Clion projects/Lab3/GameController/GameController.cpp
+GameController.h
+D:/Programming/Clion projects/Lab3/GameController/GameController.h
+../Gamers/ConsoleGamer.h
+D:/Programming/Clion projects/Lab3/Gamers/ConsoleGamer.h
+../Gamers/RandomGamer.h
+D:/Programming/Clion projects/Lab3/Gamers/RandomGamer.h
+../Gamers/OptimalGamer.h
+D:/Programming/Clion projects/Lab3/Gamers/OptimalGamer.h
+../ConsoleView/ConsoleView.h
+D:/Programming/Clion projects/Lab3/ConsoleView/ConsoleView.h
+
+D:/Programming/Clion projects/Lab3/GameController/GameController.h
+../Interfaces/IGameController.h
+D:/Programming/Clion projects/Lab3/Interfaces/IGameController.h
+
+D:/Programming/Clion projects/Lab3/GamePreferences.h
+iostream
+-
+
+D:/Programming/Clion projects/Lab3/Gamers/ConsoleGamer.h
+../Interfaces/IGamer.h
+D:/Programming/Clion projects/Lab3/Interfaces/IGamer.h
+
+D:/Programming/Clion projects/Lab3/Gamers/OptimalGamer.h
+../Interfaces/IGamer.h
+D:/Programming/Clion projects/Lab3/Interfaces/IGamer.h
+
+D:/Programming/Clion projects/Lab3/Gamers/RandomGamer.h
+../Interfaces/IGamer.h
+D:/Programming/Clion projects/Lab3/Interfaces/IGamer.h
+
+D:/Programming/Clion projects/Lab3/Interfaces/IGameController.h
+../Interfaces/IGamer.h
+D:/Programming/Clion projects/Lab3/Interfaces/IGamer.h
+
+D:/Programming/Clion projects/Lab3/Interfaces/IGameView.h
+../Map/Map.h
+D:/Programming/Clion projects/Lab3/Map/Map.h
+
+D:/Programming/Clion projects/Lab3/Interfaces/IGamer.h
+iostream
+-
+../Map/Map.h
+D:/Programming/Clion projects/Lab3/Map/Map.h
+
+D:/Programming/Clion projects/Lab3/Map/Map.h
+../GamePreferences.h
+D:/Programming/Clion projects/Lab3/GamePreferences.h
+
