@@ -17,6 +17,7 @@ private:
 public:
     const Cell &getCell(const size_t &x, const size_t &y) const;
     void setCell(const size_t &x, const size_t &y, const Cell &new_cell);
+    void clear();
     Map();
 };
 

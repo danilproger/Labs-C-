@@ -4,14 +4,18 @@
 CMakeFiles/Lab3.dir/ConsoleView/ConsoleView.cpp.obj
  D:/Programming/Clion projects/Lab3/ConsoleView/ConsoleView.cpp
  D:/Programming/Clion projects/Lab3/ConsoleView/ConsoleView.h
+ D:/Programming/Clion projects/Lab3/GameController/GameController.h
  D:/Programming/Clion projects/Lab3/GamePreferences.h
+ D:/Programming/Clion projects/Lab3/Interfaces/IGameController.h
  D:/Programming/Clion projects/Lab3/Interfaces/IGameView.h
+ D:/Programming/Clion projects/Lab3/Interfaces/IGamer.h
  D:/Programming/Clion projects/Lab3/Map/Map.h
 CMakeFiles/Lab3.dir/GameController/GameController.cpp.obj
  D:/Programming/Clion projects/Lab3/ConsoleView/ConsoleView.h
  D:/Programming/Clion projects/Lab3/GameController/GameController.cpp
  D:/Programming/Clion projects/Lab3/GameController/GameController.h
  D:/Programming/Clion projects/Lab3/GamePreferences.h
+ D:/Programming/Clion projects/Lab3/GamerFactory/GamerFactory.h
  D:/Programming/Clion projects/Lab3/Gamers/ConsoleGamer.h
  D:/Programming/Clion projects/Lab3/Gamers/OptimalGamer.h
  D:/Programming/Clion projects/Lab3/Gamers/RandomGamer.h
@@ -21,9 +25,11 @@ CMakeFiles/Lab3.dir/GameController/GameController.cpp.obj
  D:/Programming/Clion projects/Lab3/Map/Map.h
 CMakeFiles/Lab3.dir/Gamers/ConsoleGamer.cpp.obj
  D:/Programming/Clion projects/Lab3/ConsoleView/ConsoleView.h
+ D:/Programming/Clion projects/Lab3/GameController/GameController.h
  D:/Programming/Clion projects/Lab3/GamePreferences.h
  D:/Programming/Clion projects/Lab3/Gamers/ConsoleGamer.cpp
  D:/Programming/Clion projects/Lab3/Gamers/ConsoleGamer.h
+ D:/Programming/Clion projects/Lab3/Interfaces/IGameController.h
  D:/Programming/Clion projects/Lab3/Interfaces/IGameView.h
  D:/Programming/Clion projects/Lab3/Interfaces/IGamer.h
  D:/Programming/Clion projects/Lab3/Map/Map.h
@@ -44,9 +50,11 @@ CMakeFiles/Lab3.dir/Map/Map.cpp.obj
  D:/Programming/Clion projects/Lab3/Map/Map.cpp
  D:/Programming/Clion projects/Lab3/Map/Map.h
 CMakeFiles/Lab3.dir/main.cpp.obj
+ D:/Programming/Clion projects/Lab3/ConsoleView/ConsoleView.h
  D:/Programming/Clion projects/Lab3/GameController/GameController.h
  D:/Programming/Clion projects/Lab3/GamePreferences.h
  D:/Programming/Clion projects/Lab3/Interfaces/IGameController.h
+ D:/Programming/Clion projects/Lab3/Interfaces/IGameView.h
  D:/Programming/Clion projects/Lab3/Interfaces/IGamer.h
  D:/Programming/Clion projects/Lab3/Map/Map.h
  D:/Programming/Clion projects/Lab3/main.cpp

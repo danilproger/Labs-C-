@@ -7,7 +7,7 @@
 
 #include "../Interfaces/IGamer.h"
 class IGameController {
-    virtual void run(const GamerMode &gamerMode, const size_t &countGames) = 0;
+    virtual void run(const GamerMode &gamerMode_1, const GamerMode &gamerMode_2, const size_t &countGames) = 0;
 };
 
 #endif //LAB3_IGAMECONTROLLER_H

@@ -19,3 +19,11 @@ const Cell &Map::getCell(const size_t &x, const size_t &y) const{
 void Map::setCell(const size_t &x, const size_t &y, const Cell &new_cell) {
     _map[y][x] = new_cell;
 }
+
+void Map::clear() {
+    for (auto & i : _map) {
+        for (auto & j : i) {
+            j = EMPTY;
+        }
+    }
+}

@@ -95,6 +95,9 @@
 		<Unit filename="D:/Programming/Clion projects/Lab3/GamePreferences.h">
 			<Option target="Lab3"/>
 		</Unit>
+		<Unit filename="D:/Programming/Clion projects/Lab3/GamerFactory/GamerFactory.h">
+			<Option target="Lab3"/>
+		</Unit>
 		<Unit filename="D:/Programming/Clion projects/Lab3/Gamers/ConsoleGamer.cpp">
 			<Option target="Lab3"/>
 		</Unit>

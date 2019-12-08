@@ -11,10 +11,8 @@
 class ConsoleView : public IGameView{
 public:
     void drawMap(const Map &map) override;
-    void drawAttackMap(const Map &map) override;
-    void printWinner(const GameMode &mode) override;
-    void printStep(const Cell &cell) override;
-    void printScore(const std::pair<size_t, size_t> &gameScore) override;
+    void drawGameState(const Map &gamer1_attack, const Map &gamer2_attack, const std::pair<size_t, size_t>& gameScore) override;
+    void printMessage(const std::string &message) override;
 };
 
 

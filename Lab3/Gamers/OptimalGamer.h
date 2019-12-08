@@ -9,7 +9,8 @@
 #include "../Interfaces/IGamer.h"
 
 class OptimalGamer : public IGamer {
-    std::pair<size_t, size_t> attack() override;
+public:
+    std::pair<size_t, size_t> attack(const Map &attackMap) override;
     void fillMap(Map &map) override;
 };
 

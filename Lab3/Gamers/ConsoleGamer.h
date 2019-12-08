@@ -9,7 +9,7 @@
 #include "../Interfaces/IGamer.h"
 
 class ConsoleGamer : public IGamer {
-    std::pair<size_t, size_t> attack() override;
+    std::pair<size_t, size_t> attack(const Map &attackMap) override;
     void fillMap(Map &map) override;
 };
 

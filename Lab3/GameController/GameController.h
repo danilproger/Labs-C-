@@ -9,12 +9,12 @@
 #include "../Interfaces/IGameController.h"
 
 enum GameMode {
-    IN_PROCESS, WIN_GAMER, WIN_ENEMY
+    IN_PROCESS, WIN_GAMER_1, WIN_GAMER_2
 };
 
 class GameController : public IGameController {
 public:
-    void run(const GamerMode &gamerMode, const size_t &countGames) override;
+    void run(const GamerMode &gamerMode_1, const GamerMode &gamerMode_2, const size_t &countGames) override;
 };
 
 

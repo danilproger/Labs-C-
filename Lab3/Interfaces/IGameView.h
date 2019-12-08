@@ -10,11 +10,9 @@
 
 class IGameView {
 public:
-    virtual void drawMap(const Map &map) = 0;
-    virtual void drawAttackMap(const Map &map) = 0;
-    virtual void printWinner(const GameMode &mode) = 0;
-    virtual void printStep(const Cell &cell) = 0;
-    virtual void printScore(const std::pair<size_t, size_t> &gameScore) = 0;
+    virtual void drawMap(const Map&) = 0;
+    virtual void drawGameState(const Map&, const Map&, const std::pair<size_t, size_t>&) = 0;
+    virtual void printMessage(const std::string&) = 0;
 };
 
 #endif //LAB3_IGAMEVIEW_H
