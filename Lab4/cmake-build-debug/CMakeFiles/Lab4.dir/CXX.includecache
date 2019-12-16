@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/Programming/Clion projects/Lab4/CSVParser/CSVParser.h
+iostream
+-
+vector
+-
+tuple
+-
+fstream
+-
+string
+-
+sstream
+-
+limits
+-
+
+D:/Programming/Clion projects/Lab4/main.cpp
+iostream
+-
+complex
+-
+CSVParser/CSVParser.h
+D:/Programming/Clion projects/Lab4/CSVParser/CSVParser.h
+
